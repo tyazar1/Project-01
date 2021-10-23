@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Advanced Search</title>
+</head>
+
+<style>
+    /* Style codes of this page */
+    
+    img {
+        width: 10%;
+    }
+    
+    .nav-bar {
+        width: 100%;
+        height: 100px;
+    }
+    
+    .col-label {
+        width: 100%;
+        float: left;
+        margin-top: 20px;
+    }
+    
+    input {
+        width: 70%;
+        height: 25px;
+        float: right;
+    }
+    
+    .advancedSearchButton {
+        background-color: #4285F4;
+        color: white;
+        float: right;
+        margin-top: 3%;
+        cursor: pointer;
+        border: none;
+        padding: 10px;
+    }
+</style>
+
+<body>
+    <div class="nav-bar">
+        <img class="img" src="google.png" alt="">
+    </div>
+    <h3 style="margin-left: 3%;color: red;">Advanced Search</h3>
+    <hr>
+    <h4 style="margin-left: 3%;">Find Pages With...</h4>
+    <div style="width: 800px;height: 100px; margin-left: 3%;">
+        <form action="https://google.com/search">
+            <div class="col-label">
+                <label>all these words:</label>
+                <input type="text" name="as_q"> <br>
+            </div>
+            <div class="col-label">
+                <label>this exact word or phrase:</label>
+                <input type="text" name="as_epq"> <br>
+            </div>
+            <div class="col-label">
+                <label>any of these words:</label>
+                <input type="text" name="as_oq"> <br>
+            </div>
+            <div class="col-label">
+                <label>none of these words:</label>
+                <input type="text" name="as_eq"> <br>
+            </div>
+            <button type="submit" class="advancedSearchButton">Advanced Search</button>
+        </form>
+    </div>
+</body>
+
+</html>
